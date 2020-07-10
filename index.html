@@ -1,0 +1,388 @@
+<!doctype html>
+<html lang="ja">
+
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+	<!-- font awesome CSS -->
+	<link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+
+	<title>My Portfolio!</title>
+
+	<!-- google font -->
+	<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600;700&family=Noto+Sans+KR&family=Varela+Round&display=swap" rel="stylesheet">
+		
+	<!-- Custom styles CSS -->
+
+<link href="css/style.css" rel="stylesheet" media="screen">
+<link href="css/animate.css" rel="stylesheet">
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+</head>
+
+<body data-spy="scroll" data-target="#Navbar">
+
+<!------------------------------------------------
+		1. トップビジュアル
+		2. ナビバー
+		3. Message
+		4. About
+		5. Works（portfolio）
+		6. Service
+		7. Price
+		8. Contact
+		9. Footer
+-------------------------------------------------->
+
+<!------------------------------------------------
+	* 1. トップビジュアル
+-------------------------------------------------->
+	<!-- トップ問題①「idをつける」-->
+	<div id="youtube-wrap">	
+		<section id="top">
+			<!-- トップ問題①「classをつける」 -->
+			<div class="top-item">
+				<!-- ↓↓↓トップ問題②「imgタグ、pタグを作る」↓↓↓-->
+				<img src="images/chinami_logo02.png" alt="ロゴ画像">
+				
+				<p class="top-item__main typ">Welcome. chinami’s Portfolio.</p>
+				<p class="top-item__sub typ"><br>あなたと繋がる、楽しいWeb制作を。</p>
+				<!-- ↑↑↑トップ問題②「imgタグ、pタグを作る」↓↓↓-->
+			</div>
+			<!-- 動くマウスの記述 -->
+			<div class="mouse-icon">
+				<div class="wheel"></div>
+			</div>
+		</section>
+		<div id="youtube" 
+			 data-property="{
+			videoURL: 'https://youtu.be/jbBVV-BGtfY',
+			containment: '#youtube-wrap',
+			autoPlay: true,
+			stopMovieOnBlur: false,
+			loop: 1,
+			mute: true,
+			startAt: 96,
+			opacity: 1,
+			showControls: false,
+			showYTLogo: false,
+			onReady: function( player ) {$('.loading').hide('slow');}}">
+		</div>
+	</div>
+
+<!------------------------------------------------
+	* 2. ナビバー
+-------------------------------------------------->
+<header class="sticky-top">
+<!-- ↓↓↓この中にBootstrapのナビをコピペ↓↓↓ -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light p-1">
+	<div class="container nav_container" style="padding-top:0px; padding-bottom:0px;">
+		<h1>
+			<a class="navbar-brand" href="#">chinami</a></h1>
+		<button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#Navbar" aria-controls="Navbar" aria-expanded="false" aria-label="ナビゲーションの切替">
+			<span class="navbar-toggler-icon"></span></button>
+		<div class="collapse navbar-collapse" id="Navbar">
+			<ul class="nav nav-pills flex-column flex-lg-row ml-auto">
+				<li class="nav-item"><a class="nav-link" href="#top">home</a></li>
+				<li class="nav-item"><a class="nav-link" href="#about">about</a></li>
+				<li class="nav-item"><a class="nav-link" href="#portfolio">portfolio</a></li>
+				<li class="nav-item"><a class="nav-link" href="#service">service</a></li>
+				<li class="nav-item"><a class="nav-link" href="#price">price</a></li>
+				<li class="nav-item"><a class="nav-link" href="#contact">contact</a></li></ul></div></div></nav>
+		<!-- ↑↑↑この中にBootstrapのナビをコピペ ↑↑↑-->
+</header>
+<main>
+
+<!------------------------------------------------
+	* 3. Message
+-------------------------------------------------->
+	<div class="sp">
+	<section id="message" class="module" >
+			<div class="container">
+
+				<!-- ↓↓↓この中にmodule__headerを記述↓↓↓ -->
+					<div class="module__header wow fadeInUp">
+						<h2 class="module__title">
+							Message
+							<span>Message</span>
+						</h2>
+						<div class="module__line"></div>
+					</div>
+				<!-- ↑↑↑この中にmodule__headerを記述↑↑↑-->
+				<p class="text-center mt-4 wow fadeInUp" data-wow-delay=".1s">はじめまして。chinamiと申します。<br>webデザイナーを目指している和菓子屋です。</p><p class="text-center mt-4 wow fadeInUp" data-wow-delay=".2s">趣味はパン・お菓子づくりです。</p><p class="text-center mt-4 wow fadeInUp" data-wow-delay=".3s">作業を効率化し<br>あなたとのコミュニケーションを増やすことで</p><p class="text-center mt-4 wow fadeInUp" data-wow-delay=".4s">思い描いた通りの<br>理想のホームページを作る<br>お手伝いをいたします。</p>
+			</div><!-- .container -->
+		</section>
+		
+
+<!------------------------------------------------
+	* 4. About
+-------------------------------------------------->
+		<section id="about" class="module" style="margin-top: -80px;">
+
+			<!-- ↓↓↓グリッドレイアウトを使って組み立てる↓↓↓ -->
+			<div class="row">
+			<div class="col-lg-6 about-box__img">	
+			</div>
+			<div class="col-lg-6 about-box__text">
+				<div class="module__header wow fadeInUp">
+				<h2 class="module__title">
+					About me							<span>About</span>
+				</h2>
+				 <div class="module__line"></div>
+			 </div>
+				<section class="about-item">
+					<div class="about-item__icon">
+					 <i class="fas fa-user-circle" ></i>
+				 </div>
+					<div class="about-item__box wow fadeInUp" data-wow-delay=".1s">
+						<h3 class="about-item__title">chinami
+							<a href="https://twitter.com/chinammmmmm">@Twitter</a></h3>
+					<p class="about-item__desc">生年月日平成2年１１月１日</p>
+					 <p class="about-item__desc">千葉県生まれ、千葉県育ち、千葉県在住。</p>
+					 <p class="about-item__desc">東洋大学卒業後、米屋株式会社に入社。入社３年目より百貨店内店舗の店長を務める。今後の人生を考え、手に職をつけたいと考えるようになり、2019年4月に担当店舗の閉店を機に、webデザインの独学を開始。2019年7月～2020年2月 デジタルハリウッドby LIGへの通学も始める。新店舗の店長を務めながらも、現在も学習を続けている。</p>
+				 </div>
+				</section>
+			
+				<section class="about-item">
+					<div class="about-item__icon"><i class="fas fa-paint-brush" aria-hidden="true"></i></div>
+					<div class="about-item__box wow fadeInUp" data-wow-delay=".2s">
+						<h3 class="about-item__title">Status
+				  </h3>
+						<ul class="about-item__desc pl-0 list-unstyled">
+					 <li><i class="fas fa-check-square mr-2"></i>千葉県出身。29歳</li>
+					 <li><i class="fas fa-check-square mr-2"></i>現在の活動拠点は千葉。</li>
+					 <li><i class="fas fa-check-square mr-2"></i>twitterで日々勉強になったことを発信中。</li>
+					 </ul>
+				 </div>
+				</section>
+			</div>
+			</div>
+			<!-- ↑↑↑グリッドレイアウトを使って組み立てる↑↑↑ -->
+
+		</section>
+
+
+<!------------------------------------------------
+	* 5. Works（portfolio）
+-------------------------------------------------->
+<section id="portfolio" class="module">
+	<div class="container container_works">
+		<div class="module__header wow fadeInUp">
+				<h2 class="module__title">
+					My Works							<span>Portfolio</span>
+				</h2>
+				 <div class="module__line"></div>
+			 </div>
+		<div class="row justify-content-center">
+		<div class="col-lg-4 mt-3  wow fadeInUp" data-wow-delay=".1s">
+			<a href="">
+				<div class="works-item">
+					<img src="./images/works01.png" alt="画像の説明">
+					<div class="works-item__overlay">
+						<div class="works-item__inner">
+							<h3 class="works-item__title">webデザイン</h3>
+							<p class="works-item__desc">クリニックサイトのディレクション・webデザインリニューアル・HTML/CSS/JSを使ったコーデイングを行いました。</p>
+						</div>
+					</div>
+				</div>
+			</a>	
+		</div>
+		
+		<div class="col-lg-4 mt-3 wow fadeInUp" data-wow-delay=".2s">
+			<a href="">
+				<div class="works-item">
+					<img src="./images/works02.png" alt="画像の説明">
+					<div class="works-item__overlay">
+						<div class="works-item__inner">
+							<h3 class="works-item__title">webデザイン</h3>
+							<p class="works-item__desc">企業サイトのwebデザインを行いました。</p>
+						</div>
+					</div>
+				</div>
+			</a>	
+		</div>
+		
+		<div class="col-lg-4 mt-3 wow fadeInUp" data-wow-delay=".3s">
+			<a href="">
+				<div class="works-item">
+					<img src="./images/works03.png" alt="画像の説明">
+					<div class="works-item__overlay">
+						<div class="works-item__inner">
+							<h3 class="works-item__title">チラシデザイン</h3>
+							<p class="works-item__desc">除菌スプレーのチラシデザインを行いました。</p>
+						</div>
+					</div>
+				</div>
+			</a>	
+		</div>
+		<div class="row justify-content-center">
+		<div class="col-lg-4 mt-3 wow fadeInUp" data-wow-delay=".4s">
+			<a href="https://store.line.me/stickershop/product/12017784/ja">
+				<div class="works-item">
+					<img src="./images/LINE01.png" alt="画像の説明">
+					<div class="works-item__overlay">
+						<div class="works-item__inner">
+							<h3 class="works-item__title">LINEスタンプ</h3>
+							<p class="works-item__desc">オリジナルキャラクター「きんにくモモンガ」の<br>LINEスタンプを制作しました。</p>
+						</div>
+					</div>
+				</div>
+			</a>	
+		</div>
+		
+		<div class="col-lg-4 mt-3 wow fadeInUp" data-wow-delay=".5s">
+			<a href="">
+				<div class="works-item">
+					<img src="./images/works05.png" alt="画像の説明">
+					<div class="works-item__overlay">
+						<div class="works-item__inner">
+							<h3 class="works-item__title">UIアプリデザイン</h3>
+							<p class="works-item__desc">リモートワークアプリのUIデザインを行いました。</p>
+						</div>
+					</div>
+				</div>
+			</a>	
+		</div>
+			</div>
+			</div>
+	</div>
+</section>
+
+<!------------------------------------------------
+	* 6. Service
+-------------------------------------------------->
+	<section id="service" class="module">
+		<div class="container">
+		<div class="module__header wow fadeInUp">
+				<h2 class="module__title">
+					My Service						<span>Service</span>
+				</h2>
+				 <div class="module__line"></div>
+			 </div>
+			<div class="row">
+		<div class="col-md-4 mt-3">
+			<div class="service-card">
+			<div class="service-card__icon"><i class="fas fa-code"></i></div>
+			<h3 class="service-card__title">Design</h3>
+			<p class="service-card__copy">webデザイン、ホームページ制作、ランディングページの作成。バナーロゴ、アプリデザインが可能です。</p>
+			</div>
+		</div>
+		
+		<div class="col-md-4 mt-3">
+			<div class="service-card">
+			<div class="service-card__icon"><i class="fab fa-adobe"></i></div>
+			<h3 class="service-card__title">Photoshop</h3>
+			<p class="service-card__copy">Photoshopを使ったデザイン制作が可能です。写真の加工、UIパーツ、ロゴ・バナー制作、Webサイトデザインなど。</p>
+			</div>
+		</div>
+				</div>
+			</div>
+			</section>
+
+
+<!------------------------------------------------
+	* 7. Price
+-------------------------------------------------->
+<section id="price" class="module">
+		<div class="module__header wow fadeInUp">
+				<h2 class="module__title">
+					Price						<span>Price</span>
+				</h2>
+				 <div class="module__line"></div>
+			<p>web制作の参考価格です。<br>柔軟に対応しますので、まずはお気軽にご相談ください。</p>
+			 </div>
+		<table>
+        <thead>
+            <tr class=" wow fadeInUp" data-wow-delay=".1s">
+                <td></td>
+                <th scope="col">内容</th>
+                <th scope="col">価格</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class=" wow fadeInUp" data-wow-delay=".2s">
+                <th>コーディング(LP)</th>
+                <td data-label="内容" class="txt">全1ページのランディングページの制作</td>
+                <td data-label="価格" class="price">¥30,000</td>
+            </tr>
+            <tr class=" wow fadeInUp" data-wow-delay=".3s">
+                <th>コーディング(トップ)</th>
+                <td data-label="内容" class="txt">トップページのコーディング。</td>
+				<td data-label="価格" class="price">¥25,000</td>
+			</tr>
+            <tr class=" wow fadeInUp" data-wow-delay=".4s">
+                <th>コーディング(下層ページ)</th>
+                <td data-label="内容" class="txt">各コンテンツの下層ページを制作します。</td>
+				<td data-label="価格" class="price">¥5,000</td>
+			</tr>
+        </tbody>
+    </table>   
+
+</section>
+<!------------------------------------------------
+	* 8. Contact
+-------------------------------------------------->
+	<section id="contact" class="module">
+		<div class="module__header wow fadeInUp">
+				<h2 class="module__title">
+					Contact					<span>Contact</span>
+				</h2>
+				 <div class="module__line"></div>
+			<p class=" wow fadeInUp" data-wow-delay=".1s">お仕事のご相談、ご依頼などお気軽にお問い合せください。</p>
+			 </div>
+		<form id="contact-form" action="mail.php" method="post">
+			<div class="form-group  wow fadeInUp" data-wow-delay=".1s">
+			<label class="sr-only" for="name">Name</label>
+			<input type="text" id="name" class="form-control" name="name" placeholder="name" required>
+			</div>
+			<div class="form-group wow fadeInUp" data-wow-delay=".2s">
+			<label class="sr-only" for="email">Email address</label>
+			<input type="email" id="email" class="form-control" name="mail" placeholder="e-mail" required>
+			</div>
+			<div class="form-group wow fadeInUp" data-wow-delay=".3s">
+			<textarea class="form-control" id="c_message" name="content" rows="7" placeholder="your message" required></textarea>
+			</div>
+			<button type="submit" class="btn btn-block btn-custom-2  wow fadeInUp" data-wow-delay=".5s">Send Message</button>
+			</form>
+		</section>
+		</div>
+	</main>
+	
+<!------------------------------------------------
+	* 9. Footer
+-------------------------------------------------->
+	<footer>
+	<div class="container text-center">
+		<ul class="social-links d-flex justify-content-center list-unstyled">
+			<li><a href="https://www.facebook.com/chinami.ichihara"><i class="fab fa-facebook-f"></i></a></li>
+			<li><a href="https://twitter.com/chinammmmmm"><i class="fab fa-twitter"></i></a></li>
+			<li><a href="https://www.instagram.com/chinammmmm/?hl=ja"><i class="fab fa-instagram"></i></a></li>
+		</ul>
+		<p><small lang="en">© 2020 chinami.</small></p>
+		</div>
+	</footer>
+
+	<!-- Optional JavaScript -->
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+		integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+		crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+		integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+		crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+		integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+		crossorigin="anonymous"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+	<script src="js/wow.min.js"></script>
+	<script src="js/jquery.mb.YTPlayer.min.js"></script><!-- function.js -->
+	<script src="js/function.js"></script>
+	
+</body>
+
+</html>
